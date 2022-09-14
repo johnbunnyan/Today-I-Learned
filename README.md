@@ -37,7 +37,7 @@ phaser 강의를 들었다.
 
 > 
 ### 참사 현장
-<img src="./image/snapshot 5.png" width="40%" height="30%" title="100px" alt="이미지제목"></img>
+<img src="./image/Snapshot 5.png" width="40%" height="30%" title="100px" alt="이미지제목"></img>
 
 ### 리액트 코드
 ```javascript
