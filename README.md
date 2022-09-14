@@ -2,31 +2,33 @@
 # TIL (Today-I-Learned) : 오늘 배운 내용을 README에 커밋으로 기록합니다.
 
 <!-- 1️⃣ 날짜 및 기분 작성 -->
-# 🗓 2022.09.13(화) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 기분: 🤩
+# 🗓 2022.09.14(수) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 기분: 🤓
 
 
 
 
 
 <!-- 2️⃣ 대표문장 작성 -->
-phaser 강의를 들었다.
+phaser.js - 엉망진창 자동생성 자막, 영어 발음과 딕션...!
 -------------
 <!-- 강조라인 -->
 
 
 <!-- 3️⃣ 배운 내용 요약 -->
-1. phaser 게임엔진
-   * phaser는 2D게임을 구현하는 js의 대표적인 게임 프레임워크 중 하나이다.
-     * 이어
+1. 디버그 기능
+   * phaser의 config 객체 중 arcade 속성의 하위 속성으로 debug: true를 설정할 수 있다.
+     * 적용 시 화면의 스프라이트에 초록색, 분홍색 선이 생기는데 각각 스프라이트의 속력과 바디를 의미한다.
+   * body.velocity는 물체의 속력이고 점차 증가한다.
   
 
-2. 파이썬 웹 IDE
-    - replit은 다양한 개발언어환경을 제공한다.
-      - kaboom.js를 구현하고 배포하는 대표적인 공간.
+2. 입력받기
+    - config.scene.create 메서드 내부에 this.input.on('pointerdown') 키워드로 마우스 입력을 받을 수 있다.
+    - this.input.keyboard.on('keydown_SPACE') 키워드로 키보드 스페이스 입력을 받을 수 있다.
 
-3. 블로그보다 깃헙에 치중하기
-   + 블로그는 작성하려면 번거로운 감이 사실 많았다.
-     + 깃헙을 쓰면 커밋 연습도 하고 커밋 기록도 쌓이니 더 동기가 부여된다.  
+
+3. 초기화하기
+   + config.scene.update 메서드 내부에 조건문으로 스프라이트가 화면 범위를 벗어나면 재시작하도록 메서드를 만들 수 있다.
+     + 재시작 로직은 해당 스프라이트.x와 .y를 초기값으로 설정하는 매서드를 따로 만들고 update 메서드의 조건문에서 호출하는 구조이다. 
 
 
 
@@ -36,10 +38,11 @@ phaser 강의를 들었다.
 <!-- 4️⃣ 인상깊었던 내용 선정 -->
 
 > 
-### 참사 현장
-<img src="./image/Snapshot 5.png" width="40%" height="30%" title="100px" alt="이미지제목"></img>
+### 모먼트
+<img src="./image/move.gif" width="40%" height="30%" title="100px" alt="이미지제목"></img>
 
-### 리액트 코드
+계속 움직이니까 훨씬 낫다. 이게 앞으로 내가 심심하면 만질 수 있는 장난감이 될 수 있길...!
+<!-- ### 리액트 코드
 ```javascript
         {!data.length ? <Nothing whatIsDisplayed={'Search'}></Nothing> : data.map((el, idx) => {
               console.log(el)
@@ -57,14 +60,14 @@ phaser 강의를 들었다.
 <br>
 *프로젝트 파일을 다시 하나하나 뜯어봐야 한다. 심지어 내가 구현하지도 않은 팀원의 코드를.*
 
->   > 일단 phaser.js 먼저 조지고 시작하기로 결정.
+>   > 일단 phaser.js 먼저 조지고 시작하기로 결정. -->
 
 
 -----
 ## 🔗 참고
 <!-- 5️⃣ 참고링크 -->
 
-<http://google.com>
+<https://www.udemy.com/share/103KUA3@mAYdmG_9T1qWlnx_xbYmyXd2G5qjZ8vnd58KfcbyO-wH9e-dyFkVPMXM3j2uQ8To3w==/>
 
 
 
